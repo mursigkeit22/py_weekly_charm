@@ -1,0 +1,1 @@
+print("script_example2: When a module is imported, Python runs all of the code in the module file.  \n")
