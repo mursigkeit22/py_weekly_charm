@@ -1,0 +1,223 @@
+17:59:09 DEBUG:asyncio: Using proactor: IocpProactor
+17:59:09 INFO:mylogger: Got response 200 for URL: http://google.com
+17:59:09 INFO:mylogger: Found 18 links for http://google.com
+17:59:09 INFO:mylogger: Wrote results for source URL: http://google.com
+17:59:09 ERROR:mylogger: aiohttp exception for http://linkedin.com [400]: Bad Request
+17:59:09 INFO:mylogger: Got response 200 for URL: http://apple.com
+17:59:09 INFO:mylogger: Found 199 links for http://apple.com
+17:59:09 INFO:mylogger: Wrote results for source URL: http://apple.com
+17:59:09 INFO:mylogger: Got response 200 for URL: http://microsoft.com
+17:59:09 INFO:mylogger: Found 101 links for http://microsoft.com
+17:59:09 INFO:mylogger: Got response 200 for URL: http://twitter.com
+17:59:09 INFO:mylogger: Wrote results for source URL: http://microsoft.com
+17:59:09 INFO:mylogger: Got response 200 for URL: http://facebook.com
+17:59:10 INFO:mylogger: Found 79 links for http://facebook.com
+17:59:10 INFO:mylogger: Wrote results for source URL: http://facebook.com
+17:59:10 INFO:mylogger: Got response 200 for URL: http://yahoo.com
+17:59:11 INFO:mylogger: Found 110 links for http://yahoo.com
+17:59:11 INFO:mylogger: Wrote results for source URL: http://yahoo.com
+17:59:19 ERROR:mylogger: Non-aiohttp exception occured for url http://twitter.com
+Traceback (most recent call last):
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 45, in parse
+    html = await fetch_html(url=url, session=session, **kwargs)
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 38, in fetch_html
+    html = await resp.text()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1009, in text
+    await self.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 973, in read
+    self._body = await self.content.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 358, in read
+    block = await self.readany()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 380, in readany
+    await self._wait('readany')
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 296, in _wait
+    await waiter
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\helpers.py", line 596, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+18:05:20 DEBUG:asyncio: Using proactor: IocpProactor
+18:05:20 INFO:mylogger: Got response 200 for URL: http://google.com
+18:05:20 INFO:mylogger: Found 18 links for http://google.com
+18:05:20 INFO:mylogger: Wrote results for source URL: http://google.com
+18:05:20 ERROR:mylogger: aiohttp exception for http://linkedin.com [400]: Bad Request
+18:05:20 INFO:mylogger: Got response 200 for URL: http://apple.com
+18:05:20 INFO:mylogger: Found 199 links for http://apple.com
+18:05:20 INFO:mylogger: Wrote results for source URL: http://apple.com
+18:05:20 INFO:mylogger: Got response 200 for URL: http://microsoft.com
+18:05:20 INFO:mylogger: Found 101 links for http://microsoft.com
+18:05:20 INFO:mylogger: Wrote results for source URL: http://microsoft.com
+18:05:20 INFO:mylogger: Got response 200 for URL: http://facebook.com
+18:05:21 INFO:mylogger: Found 80 links for http://facebook.com
+18:05:21 INFO:mylogger: Wrote results for source URL: http://facebook.com
+18:05:21 INFO:mylogger: Got response 200 for URL: http://twitter.com
+18:05:21 INFO:mylogger: Got response 200 for URL: http://yahoo.com
+18:05:22 INFO:mylogger: Found 110 links for http://yahoo.com
+18:05:22 INFO:mylogger: Wrote results for source URL: http://yahoo.com
+18:05:30 ERROR:mylogger: Non-aiohttp exception occured for url http://twitter.com
+Traceback (most recent call last):
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 44, in parse
+    html = await fetch_html(url=url, session=session, **kwargs)
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 37, in fetch_html
+    html = await resp.text()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1009, in text
+    await self.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 973, in read
+    self._body = await self.content.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 358, in read
+    block = await self.readany()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 380, in readany
+    await self._wait('readany')
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 296, in _wait
+    await waiter
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\helpers.py", line 596, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+18:21:11 DEBUG:asyncio: Using proactor: IocpProactor
+18:21:11 INFO:mylogger: Got response 200 for URL: http://google.com
+18:21:11 INFO:mylogger: Found 18 links for http://google.com
+18:21:11 INFO:mylogger: Wrote results for source URL: http://google.com
+18:21:12 ERROR:mylogger: aiohttp exception for http://linkedin.com [400]: Bad Request
+18:21:12 INFO:mylogger: Got response 200 for URL: http://microsoft.com
+18:21:12 INFO:mylogger: Found 101 links for http://microsoft.com
+18:21:12 INFO:mylogger: Got response 200 for URL: http://apple.com
+18:21:12 INFO:mylogger: Found 199 links for http://apple.com
+18:21:12 INFO:mylogger: Wrote results for source URL: http://microsoft.com
+18:21:12 INFO:mylogger: Wrote results for source URL: http://apple.com
+18:21:12 INFO:mylogger: Got response 200 for URL: http://facebook.com
+18:21:12 INFO:mylogger: Found 80 links for http://facebook.com
+18:21:12 INFO:mylogger: Wrote results for source URL: http://facebook.com
+18:21:12 INFO:mylogger: Got response 200 for URL: http://twitter.com
+18:21:13 INFO:mylogger: Got response 200 for URL: http://yahoo.com
+18:21:13 INFO:mylogger: Found 110 links for http://yahoo.com
+18:21:13 INFO:mylogger: Wrote results for source URL: http://yahoo.com
+18:21:22 ERROR:mylogger: Non-aiohttp exception occured for urlhttp://twitter.com
+Traceback (most recent call last):
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 44, in parse
+    html = await fetch_html(url=url, session=session, **kwargs)
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 37, in fetch_html
+    html = await resp.text()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1009, in text
+    await self.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 973, in read
+    self._body = await self.content.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 358, in read
+    block = await self.readany()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 380, in readany
+    await self._wait('readany')
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 296, in _wait
+    await waiter
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\helpers.py", line 596, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+18:21:22 ERROR:mylogger: Exception: () ** None ** <class 'asyncio.exceptions.TimeoutError'>
+Traceback (most recent call last):
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 44, in parse
+    html = await fetch_html(url=url, session=session, **kwargs)
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 37, in fetch_html
+    html = await resp.text()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1009, in text
+    await self.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 973, in read
+    self._body = await self.content.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 358, in read
+    block = await self.readany()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 380, in readany
+    await self._wait('readany')
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 296, in _wait
+    await waiter
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\helpers.py", line 596, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+18:23:28 DEBUG:asyncio: Using proactor: IocpProactor
+18:23:28 INFO:mylogger: Got response 200 for URL: http://google.com
+18:23:28 INFO:mylogger: Found 18 links for http://google.com
+18:23:28 INFO:mylogger: Wrote results for source URL: http://google.com
+18:23:28 ERROR:mylogger: aiohttp exception for http://linkedin.com [400]: Bad Request
+18:23:28 INFO:mylogger: Got response 200 for URL: http://apple.com
+18:23:28 INFO:mylogger: Found 199 links for http://apple.com
+18:23:28 INFO:mylogger: Got response 200 for URL: http://microsoft.com
+18:23:28 INFO:mylogger: Wrote results for source URL: http://apple.com
+18:23:29 INFO:mylogger: Found 101 links for http://microsoft.com
+18:23:29 INFO:mylogger: Wrote results for source URL: http://microsoft.com
+18:23:29 INFO:mylogger: Got response 200 for URL: http://facebook.com
+18:23:29 INFO:mylogger: Found 80 links for http://facebook.com
+18:23:29 INFO:mylogger: Wrote results for source URL: http://facebook.com
+18:23:29 INFO:mylogger: Got response 200 for URL: http://twitter.com
+18:23:29 INFO:mylogger: Got response 200 for URL: http://yahoo.com
+18:23:30 INFO:mylogger: Found 112 links for http://yahoo.com
+18:23:30 INFO:mylogger: Wrote results for source URL: http://yahoo.com
+18:23:39 ERROR:mylogger: Non-aiohttp exception occured for urlhttp://twitter.com
+Traceback (most recent call last):
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 44, in parse
+    html = await fetch_html(url=url, session=session, **kwargs)
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 37, in fetch_html
+    html = await resp.text()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1009, in text
+    await self.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 973, in read
+    self._body = await self.content.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 358, in read
+    block = await self.readany()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 380, in readany
+    await self._wait('readany')
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 296, in _wait
+    await waiter
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\helpers.py", line 596, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+18:24:36 DEBUG:asyncio: Using proactor: IocpProactor
+18:24:36 INFO:mylogger: Got response 200 for URL: http://google.com
+18:24:36 INFO:mylogger: Found 18 links for http://google.com
+18:24:36 INFO:mylogger: Wrote results for source URL: http://google.com
+18:24:36 ERROR:mylogger: aiohttp exception for http://linkedin.com [400]: Bad Request
+18:24:37 INFO:mylogger: Got response 200 for URL: http://apple.com
+18:24:37 INFO:mylogger: Found 199 links for http://apple.com
+18:24:37 INFO:mylogger: Got response 200 for URL: http://microsoft.com
+18:24:37 INFO:mylogger: Found 101 links for http://microsoft.com
+18:24:37 INFO:mylogger: Wrote results for source URL: http://apple.com
+18:24:37 INFO:mylogger: Wrote results for source URL: http://microsoft.com
+18:24:37 INFO:mylogger: Got response 200 for URL: http://facebook.com
+18:24:37 INFO:mylogger: Found 80 links for http://facebook.com
+18:24:37 INFO:mylogger: Wrote results for source URL: http://facebook.com
+18:24:37 INFO:mylogger: Got response 200 for URL: http://twitter.com
+18:24:38 INFO:mylogger: Got response 200 for URL: http://yahoo.com
+18:24:38 INFO:mylogger: Found 108 links for http://yahoo.com
+18:24:38 INFO:mylogger: Wrote results for source URL: http://yahoo.com
+18:24:47 ERROR:mylogger: Non-aiohttp exception occured for urlhttp://twitter.com
+Traceback (most recent call last):
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 44, in parse
+    html = await fetch_html(url=url, session=session, **kwargs)
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 37, in fetch_html
+    html = await resp.text()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1009, in text
+    await self.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 973, in read
+    self._body = await self.content.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 358, in read
+    block = await self.readany()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 380, in readany
+    await self._wait('readany')
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 296, in _wait
+    await waiter
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\helpers.py", line 596, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+18:24:47 ERROR:mylogger: Exception:  ** ** <class 'asyncio.exceptions.TimeoutError'>
+Traceback (most recent call last):
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 44, in parse
+    html = await fetch_html(url=url, session=session, **kwargs)
+  File "C:/mein/study/Pythone/study_projects/py_weekly/asynchronous/asynch_beginners/_9.py", line 37, in fetch_html
+    html = await resp.text()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1009, in text
+    await self.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\client_reqrep.py", line 973, in read
+    self._body = await self.content.read()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 358, in read
+    block = await self.readany()
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 380, in readany
+    await self._wait('readany')
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\streams.py", line 296, in _wait
+    await waiter
+  File "C:\mein\study\Pythone\study_projects\py_weekly\venv\lib\site-packages\aiohttp\helpers.py", line 596, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
